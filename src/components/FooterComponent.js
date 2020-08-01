@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 
 function Footer(props) {
     return (
@@ -29,7 +29,7 @@ function Footer(props) {
                 </div>
             </div>
         </footer>
-    );
+    )
 }
 
 export default Footer;

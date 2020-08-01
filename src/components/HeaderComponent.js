@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component }  from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron,
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label } from 'reactstrap';
@@ -8,11 +8,12 @@ class Header extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            isNavOpen: false,
-            isModalOpen: false
-        };
 
+        
+        this.state = {
+          isNavOpen: false,
+          isModalOpen: false
+        };
         this.toggleNav = this.toggleNav.bind(this);
         this.toggleModal = this.toggleModal.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
@@ -36,6 +37,7 @@ class Header extends Component {
         event.preventDefault();
     }
 
+
     render() {
         return (
             <React.Fragment>
@@ -49,7 +51,6 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
@@ -111,6 +112,7 @@ class Header extends Component {
                         </Form>
                     </ModalBody>
                 </Modal>
+
             </React.Fragment>
         );
     }
